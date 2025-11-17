@@ -11,7 +11,7 @@ import Section from "@/components/Section";
 const founders = [
   {
     name: "Andrea Bonarrigo",
-    title: "Founder & CEO",
+    title: "Co-Founder & CEO",
     subtitle: "Bocconi University | Visiting UC Santa Cruz",
     description:
       "Ex-Amazon Tech PM, founded Ubooks (40K users, $30K MRR at 17), 5× hackathon winner, YC Startup School alum. Product-focused founder with deep systems and early-scaling experience.",
