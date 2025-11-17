@@ -5,63 +5,147 @@ import { motion } from "framer-motion";
 
 import Header from "@/components/Header";
 
-const manifestoSections: { label: string; paragraphs: ReactNode[] }[] = [
+type ParagraphContent = {
+  id: string;
+  content: ReactNode;
+};
+
+const manifestoSections: {
+  label: string;
+  paragraphs: ParagraphContent[];
+}[] = [
   {
     label: "The Vision",
     paragraphs: [
-      <>
-        We imagine a world where every single word, every line of copy, every
-        subject line, every CTA{" "}
-        <span className="font-semibold">
-          learns from how people react to it.
-        </span>
-      </>,
-      "A world where language isn’t static, but alive. Where algorithms don’t just generate text, but understand and improve it, continuously, autonomously, and at scale.",
-      "Our goal is to build the algorithm that personalizes communication for every individual. An algorithm that learns what resonates with each reader, and optimizes towards one universal metric: engagement.",
-      "We’re starting with email: the most measurable, most iterative marketing channel. But we’re building toward something bigger: a world where every piece of text is optimized for its goal.",
+      {
+        id: "vision-1",
+        content: (
+          <>
+            We imagine a world where every single word, every line of copy,
+            every subject line, every CTA{" "}
+            <span className="font-semibold">
+              learns from how people react to it.
+            </span>
+          </>
+        ),
+      },
+      {
+        id: "vision-2",
+        content:
+          "A world where language isn’t static, but alive. Where algorithms don’t just generate text, but understand and improve it, continuously, autonomously, and at scale.",
+      },
+      {
+        id: "vision-3",
+        content:
+          "Our goal is to build the algorithm that personalizes communication for every individual. An algorithm that learns what resonates with each reader, and optimizes towards one universal metric: engagement.",
+      },
+      {
+        id: "vision-4",
+        content:
+          "We’re starting with email: the most measurable, most iterative marketing channel. But we’re building toward something bigger: a world where every piece of text is optimized for its goal.",
+      },
     ],
   },
   {
     label: "The Belief",
     paragraphs: [
-      "We believe creativity can be explainable.",
-      "We believe preferences can be embedded, tracked, and learned.",
-      "We believe reinforcement learning, the same feedback loop that mastered games, can master persuasion.",
-      "TikTok and Meta already do this for feeds and reccomandation. We’re doing it for language.",
+      { id: "belief-1", content: "We believe creativity can be explainable." },
+      {
+        id: "belief-2",
+        content:
+          "We believe preferences can be embedded, tracked, and learned.",
+      },
+      {
+        id: "belief-3",
+        content:
+          "We believe reinforcement learning, the same feedback loop that mastered games, can master persuasion.",
+      },
+      {
+        id: "belief-4",
+        content:
+          "TikTok and Meta already do this for feeds and reccomandation. We’re doing it for language.",
+      },
     ],
   },
   {
     label: "The Mission",
     paragraphs: [
-      "inkRL is building a proprietary reinforcement learning system that autonomously improves marketing copy to maximize user engagement.",
-      "Every campaign becomes a feedback loop. Every click teaches the model something new. Every word is an experiment.",
-      "We’re creating a personalized optimization layer for the internet where text adapts to humans, not the other way around.",
+      {
+        id: "mission-1",
+        content:
+          "inkRL is building a proprietary reinforcement learning system that autonomously improves marketing copy to maximize user engagement.",
+      },
+      {
+        id: "mission-2",
+        content:
+          "Every campaign becomes a feedback loop. Every click teaches the model something new. Every word is an experiment.",
+      },
+      {
+        id: "mission-3",
+        content:
+          "We’re creating a personalized optimization layer for the internet where text adapts to humans, not the other way around.",
+      },
     ],
   },
 ];
 
-const prefaceParagraphs: ReactNode[] = [
-  <>
-    From marketing emails to product descriptions, from ads on your feed to
-    billboards on the street, from political campaigns to product launches –{" "}
-    <span className="italic font-bold text-lg sm:text-xl">
-      everything runs on text.
-    </span>
-  </>,
-  "Text is how ideas travel, how we sell, how we persuade, how we move the world.",
-  "Every word you read has been crafted by a human, for a human to make you think, feel, or act.",
-  "But it’s static. It’s generic. It’s one-size-fits-all.",
-  <em className="italic text-ink/80">
-    We think that’s insane. And we’re here to change it.
-  </em>,
-  <span className="italic text-xl">
-    We want text to adapt, to specialize, to learn, to understand you.
-  </span>,
-  <span className="italic text-xl">
-    To evolve until every word is written not just for a crowd, but for a
-    person.
-  </span>,
-  "That’s what inkRL is building: a system that transforms language from something designed by humans for humans into something optimized with them: a world where words don’t just speak, but learn.",
+const prefaceParagraphs: ParagraphContent[] = [
+  {
+    id: "preface-1",
+    content: (
+      <>
+        From marketing emails to product descriptions, from ads on your feed to
+        billboards on the street, from political campaigns to product launches –{" "}
+        <span className="italic font-bold text-lg sm:text-xl">
+          everything runs on text.
+        </span>
+      </>
+    ),
+  },
+  {
+    id: "preface-2",
+    content:
+      "Text is how ideas travel, how we sell, how we persuade, how we move the world.",
+  },
+  {
+    id: "preface-3",
+    content:
+      "Every word you read has been crafted by a human, for a human to make you think, feel, or act.",
+  },
+  {
+    id: "preface-4",
+    content: "But it’s static. It’s generic. It’s one-size-fits-all.",
+  },
+  {
+    id: "preface-5",
+    content: (
+      <em className="italic text-ink/80">
+        We think that’s insane. And we’re here to change it.
+      </em>
+    ),
+  },
+  {
+    id: "preface-6",
+    content: (
+      <span className="italic text-xl">
+        We want text to adapt, to specialize, to learn, to understand you.
+      </span>
+    ),
+  },
+  {
+    id: "preface-7",
+    content: (
+      <span className="italic text-xl">
+        To evolve until every word is written not just for a crowd, but for a
+        person.
+      </span>
+    ),
+  },
+  {
+    id: "preface-8",
+    content:
+      "That’s what inkRL is building: a system that transforms language from something designed by humans for humans into something optimized with them: a world where words don’t just speak, but learn.",
+  },
 ];
 
 const fadeUp = {
@@ -143,12 +227,12 @@ export default function Home() {
           </motion.p>
           {prefaceParagraphs.map((paragraph, idx) => (
             <motion.p
-              key={idx}
+              key={paragraph.id}
               className="max-w-4xl text-base text-muted-gray sm:text-lg"
               initial={fadeUp.initial}
               animate={fadeUp.animate(0.25 + idx * 0.05)}
             >
-              {paragraph}
+              {paragraph.content}
             </motion.p>
           ))}
           <motion.p
@@ -187,8 +271,8 @@ export default function Home() {
                 {section.label}
               </p>
               <div className="space-y-4 text-lg leading-relaxed text-ink/90 sm:text-xl">
-                {section.paragraphs.map((paragraph, paragraphIdx) => (
-                  <p key={paragraphIdx}>{paragraph}</p>
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph.id}>{paragraph.content}</p>
                 ))}
               </div>
             </motion.article>

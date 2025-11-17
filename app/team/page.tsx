@@ -20,7 +20,7 @@ const founders = [
   },
   {
     name: "Vittorio Garavelli",
-    title: "Co-Founder & RL Lead",
+    title: "Co-Founder & CTO",
     description:
       "Brings reinforcement-learning rigor from Berkeley and Bocconi. Designs the policies that make inkRL adapt faster every send.",
     image: "/avatars/vittorio.jpg",
@@ -29,9 +29,9 @@ const founders = [
   },
   {
     name: "Filippo Gombac",
-    title: "Co-Founder & Systems",
+    title: "Co-Founder & Chief Research",
     description:
-      "Full-stack builder obsessed with measurement. Architecting the feedback infrastructure that turns every campaign into signal.",
+      "Heads the RL and language research stack. Specializes in reward modeling, content measurement, and data tooling that keep our agents aligned.",
     image: "/avatars/filippo.jpg",
     email: "filippo.gombac@studbocconi.it",
     floatDelay: 0.8,
