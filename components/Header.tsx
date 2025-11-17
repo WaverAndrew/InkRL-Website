@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import InkLogo from './InkLogo'
+import Link from "next/link";
+import { motion } from "framer-motion";
+import InkLogo from "./InkLogo";
 
 export default function Header() {
   return (
@@ -13,6 +13,12 @@ export default function Header() {
           <span className="font-mono text-xl font-medium">inkRL</span>
         </Link>
         <div className="flex items-center gap-6">
+          <Link
+            href="/"
+            className="text-sm font-sans hover:underline underline-offset-4"
+          >
+            Manifesto
+          </Link>
           <Link
             href="#how-it-works"
             className="text-sm font-sans hover:underline underline-offset-4"
@@ -34,6 +40,5 @@ export default function Header() {
         </div>
       </nav>
     </header>
-  )
+  );
 }
-
