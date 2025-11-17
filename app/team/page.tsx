@@ -12,8 +12,9 @@ const founders = [
   {
     name: "Andrea Bonarrigo",
     title: "Founder & CEO",
+    subtitle: "Bocconi University | Visiting UC Santa Cruz",
     description:
-      "Product systems thinker. Built and shipped across Amazon, YC-backed experiments, and RL research tracks bridging product with algorithms.",
+      "Ex-Amazon Tech PM, founded Ubooks (40K users, $30K MRR at 17), 5× hackathon winner, YC Startup School alum. Product-focused founder with deep systems and early-scaling experience.",
     image: "/avatars/andrea.jpg",
     email: "andrea.bonarrigo@studbocconi.it",
     floatDelay: 0,
@@ -21,8 +22,9 @@ const founders = [
   {
     name: "Vittorio Garavelli",
     title: "Co-Founder & CTO",
+    subtitle: "Bocconi University | Visiting UC Berkeley",
     description:
-      "Brings reinforcement-learning rigor from Berkeley and Bocconi. Designs the policies that make inkRL adapt faster every send.",
+      "RL researcher out of Bocconi and Berkeley. Co-founded a web dev & SEO agency and worked as an M&A analyst. Leads engineering by marrying applied RL with full-stack execution.",
     image: "/avatars/vittorio.jpg",
     email: "vittorio.garavelli@studbocconi.it",
     floatDelay: 0.4,
@@ -30,8 +32,9 @@ const founders = [
   {
     name: "Filippo Gombac",
     title: "Co-Founder & Chief Research",
+    subtitle: "Bocconi University | Visiting UCL",
     description:
-      "Heads the RL and language research stack. Specializes in reward modeling, content measurement, and data tooling that keep our agents aligned.",
+      "ML & RL researcher focused on model design, LoRA fine-tuning, and applied reinforcement-learning systems. Leads inkRL’s core research and training architecture.",
     image: "/avatars/filippo.jpg",
     email: "filippo.gombac@studbocconi.it",
     floatDelay: 0.8,
@@ -97,6 +100,11 @@ export default function TeamPage() {
                   {founder.title}
                 </p>
                 <h2 className="text-2xl font-semibold">{founder.name}</h2>
+                {founder.subtitle ? (
+                  <p className="text-xs font-mono uppercase tracking-[0.3em] text-muted-gray/80">
+                    {founder.subtitle}
+                  </p>
+                ) : null}
                 <p className="text-sm leading-relaxed text-ink/80 sm:text-base">
                   {founder.description}
                 </p>
