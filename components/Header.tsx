@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import InkLogo from "./InkLogo";
 
 const navItems = [
-  { label: "Manifesto", href: "/" },
-  { label: "How it works", href: "#how-it-works", hideOnMobile: true },
+  { label: "How it works", href: "/" },
+  { label: "Manifesto", href: "/manifesto" },
   { label: "Team", href: "/team" },
 ];
 
@@ -23,15 +24,18 @@ export default function Header() {
 
         <div className="flex flex-1 flex-wrap items-center justify-center gap-3 text-muted-gray">
           {navItems.map((item) => (
-            <Link
+            <motion.div
               key={item.label}
-              href={item.href}
-              className={`rounded-full border border-transparent px-4 py-1 text-[0.58rem] tracking-[0.4em] transition-colors hover:border-ink/40 hover:text-ink ${
-                item.hideOnMobile ? "hidden sm:inline-flex" : ""
-              }`}
+              whileHover={{ scale: 1.1, rotate: Math.random() * 4 - 2 }}
+              whileTap={{ scale: 0.95 }}
             >
-              {item.label}
-            </Link>
+              <Link
+                href={item.href}
+                className="rounded-full border border-transparent px-4 py-1 text-[0.58rem] tracking-[0.4em] transition-colors hover:border-ink/40 hover:text-ink"
+              >
+                {item.label}
+              </Link>
+            </motion.div>
           ))}
         </div>
       </nav>

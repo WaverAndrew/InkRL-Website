@@ -1,87 +1,58 @@
-'use client'
+"use client";
 
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { useRef } from 'react'
-import InkLogo from './InkLogo'
-import Link from 'next/link'
+import { ArrowRight, Zap, Target, BarChart3 } from "lucide-react";
+import { GlassCard } from "./ui/GlassCard";
 
-export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start start', 'end start'],
-  })
-
-  const y = useTransform(scrollYProgress, [0, 1], [0, 100])
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95])
-
-  const letters = 'inkRL'.split('')
-
+export function Hero() {
   return (
-    <div ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Parallax ink splash background */}
-      <motion.div
-        style={{ y, opacity: useTransform(scrollYProgress, [0, 1], [0.3, 0]) }}
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
-      >
-        <InkLogo className="w-96 h-96 text-ink/5" />
-      </motion.div>
+    <section className="relative min-h-screen flex flex-col justify-center items-center px-4 py-20 overflow-hidden">
+      {/* Background Gradients */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-purple-500/20 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-500/20 rounded-full blur-[120px]" />
+      </div>
 
-      <motion.div
-        style={{ scale, opacity }}
-        className="relative z-10 text-center px-6"
-      >
-        <div className="flex items-center justify-center gap-4 mb-6">
-          <InkLogo className="w-12 h-12" />
-          <div className="flex items-baseline gap-2">
-            {letters.map((letter, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="font-mono text-6xl md:text-8xl font-medium"
-              >
-                {letter}
-              </motion.span>
-            ))}
-          </div>
+      <div className="max-w-6xl mx-auto w-full text-center z-10">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+          <span className="text-sm text-gray-300">Revolutionizing Copy Optimization</span>
         </div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
-          className="font-sans text-2xl md:text-3xl text-muted-gray mb-12"
-        >
-          <span className="line-through opacity-50">Landing</span>{' '}
-          <span className="font-medium">Learning pages</span>
-        </motion.h1>
+        <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50 mb-6 tracking-tight">
+          Continuous, Scalable <br />
+          <span className="text-white">Copy Optimization</span>
+        </h1>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <Link
-            href="#demo-section"
-            className="px-8 py-3 border-2 border-ink rounded-sm font-sans text-sm hover:bg-ink hover:text-paper transition-colors relative group"
-          >
-            Get a demo
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-ink group-hover:w-full transition-all duration-300" />
-          </Link>
-          <Link
-            href="#how-it-works"
-            className="px-8 py-3 font-sans text-sm text-muted-gray hover:text-ink transition-colors relative group"
-          >
-            How it works
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-ink group-hover:w-full transition-all duration-300" />
-          </Link>
-        </motion.div>
-      </motion.div>
-    </div>
-  )
+        <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+          Stop relying on sporadic tests. InkRL iterates copy rapidly, segments by audience, and learns without long test cycles.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <GlassCard className="group hover:bg-white/10 transition-colors duration-300">
+            <div className="p-2 bg-white/5 w-fit rounded-lg mb-4 group-hover:scale-110 transition-transform">
+              <Zap className="w-6 h-6 text-yellow-400" />
+            </div>
+            <h3 className="text-lg font-semibold text-white mb-2">Continuous Optimization</h3>
+            <p className="text-sm text-gray-400">Aligned to traffic intent & segment. Always learning, always improving.</p>
+          </GlassCard>
+
+          <GlassCard className="group hover:bg-white/10 transition-colors duration-300">
+            <div className="p-2 bg-white/5 w-fit rounded-lg mb-4 group-hover:scale-110 transition-transform">
+              <Target className="w-6 h-6 text-red-400" />
+            </div>
+            <h3 className="text-lg font-semibold text-white mb-2">Focused Offers</h3>
+            <p className="text-sm text-gray-400">Clear CTAs + proof. Delivering the right message to the right person.</p>
+          </GlassCard>
+
+          <GlassCard className="group hover:bg-white/10 transition-colors duration-300">
+            <div className="p-2 bg-white/5 w-fit rounded-lg mb-4 group-hover:scale-110 transition-transform">
+              <BarChart3 className="w-6 h-6 text-blue-400" />
+            </div>
+            <h3 className="text-lg font-semibold text-white mb-2">Measurement Loop</h3>
+            <p className="text-sm text-gray-400">Finds wins faster than classic A/B testing through reinforcement learning.</p>
+          </GlassCard>
+        </div>
+      </div>
+    </section>
+  );
 }
-
