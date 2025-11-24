@@ -1,22 +1,32 @@
 import { cn } from "@/lib/utils";
-import { ReactNode } from "react";
+import { motion, HTMLMotionProps } from "framer-motion";
 
-interface GlassCardProps {
-  children: ReactNode;
+interface GlassCardProps extends HTMLMotionProps<"div"> {
+  children: React.ReactNode;
   className?: string;
+  hoverEffect?: boolean;
 }
 
-export function GlassCard({ children, className }: GlassCardProps) {
+export function GlassCard({ children, className, hoverEffect = false, ...props }: GlassCardProps) {
   return (
-    <div
+    <motion.div
       className={cn(
-        "relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md",
-        "shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]",
+        "relative overflow-hidden rounded-2xl border border-black/5 bg-white/40 p-6 backdrop-blur-md",
+        "shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1)]",
+        hoverEffect && "transition-colors hover:bg-white/60",
         className
       )}
+      {...props}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
-      {children}
-    </div>
+      {/* Noise texture overlay for premium feel */}
+      <div className="pointer-events-none absolute inset-0 opacity-[0.03] bg-[url('/noise.png')]" />
+      
+      {/* Shine effect */}
+      <div className="pointer-events-none absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-10 blur-lg" />
+      
+      <div className="relative z-10">
+        {children}
+      </div>
+    </motion.div>
   );
 }
