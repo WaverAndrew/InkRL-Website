@@ -25,16 +25,14 @@ export function UserProfile({ isConnected, onToggle }: UserProfileProps) {
     >
       <div className="mb-6 flex items-center justify-between">
         <h3 className="text-lg font-bold text-ink">User Embedding</h3>
-        <button
-          onClick={onToggle}
-          className={`relative z-30 rounded-full p-2 transition-colors ${
-            isConnected 
-              ? "bg-accent-blue text-white shadow-[0_0_15px_rgba(59,130,246,0.5)]" 
-              : "bg-black/5 text-muted-gray hover:bg-black/10"
-          }`}
-        >
-          {isConnected ? <Link2 className="h-4 w-4" /> : <Link2Off className="h-4 w-4" />}
-        </button>
+        {isConnected && (
+          <button
+            onClick={onToggle}
+            className="relative z-30 rounded-full bg-accent-blue p-2 text-white shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-colors hover:bg-accent-blue/80"
+          >
+            <Link2 className="h-4 w-4" />
+          </button>
+        )}
       </div>
 
       <div className="space-y-4">
@@ -78,11 +76,14 @@ export function UserProfile({ isConnected, onToggle }: UserProfileProps) {
       </div>
       
       {!isConnected && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-[1px]">
-          <span className="rounded-full bg-black/50 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md">
-            Click Link to Inject
+        <button 
+          onClick={onToggle}
+          className="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-[1px] transition-all hover:bg-black/10"
+        >
+          <span className="rounded-full bg-black/50 px-4 py-2 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md transition-transform hover:scale-105">
+            Click to add user specialization
           </span>
-        </div>
+        </button>
       )}
     </GlassCard>
   );
