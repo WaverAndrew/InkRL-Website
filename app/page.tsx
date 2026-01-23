@@ -181,7 +181,7 @@ export default function Home() {
                     <span className="text-xs font-bold text-blue-500">1</span>
                   </div>
                   <p className="text-sm text-muted-gray">
-                    <span className="text-ink font-medium">Analyze history</span> — we look at past campaigns to see what worked
+                    <span className="text-ink font-medium">Analyze history</span> we look at past campaigns to see what worked
                   </p>
                 </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
                     <span className="text-xs font-bold text-purple-500">2</span>
                   </div>
                   <p className="text-sm text-muted-gray">
-                    <span className="text-ink font-medium">Map interests</span> — we identify the unique habits of every subscriber
+                    <span className="text-ink font-medium">Map interests</span> we identify the unique habits of every subscriber
                   </p>
                 </div>
 
@@ -199,7 +199,7 @@ export default function Home() {
                     <span className="text-xs font-bold text-green-500">3</span>
                   </div>
                   <p className="text-sm text-muted-gray">
-                    <span className="text-ink font-medium">Group audiences</span> — natural segments emerge automatically
+                    <span className="text-ink font-medium">Group audiences</span> natural segments emerge automatically
                   </p>
                 </div>
               </div>
