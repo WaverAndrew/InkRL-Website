@@ -8,6 +8,7 @@ const navItems = [
   { label: "How it works", href: "/" },
   { label: "Manifesto", href: "/manifesto" },
   { label: "Team", href: "/team" },
+  { label: "Demo", href: "https://ink-rl-demo.vercel.app/dashboard" },
 ];
 
 export default function Header() {
@@ -31,6 +32,8 @@ export default function Header() {
             >
               <Link
                 href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="rounded-full border border-transparent px-4 py-1 text-[0.58rem] tracking-[0.4em] transition-colors hover:border-ink/40 hover:text-ink"
               >
                 {item.label}
