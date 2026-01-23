@@ -14,14 +14,17 @@ export function EmailInput() {
       <div className="p-6 text-gray-700 space-y-4">
         <div className="space-y-1">
             <p className="text-xs text-gray-400 uppercase tracking-wider">Subject</p>
-            <p className="font-medium text-gray-900">Summer Sale</p>
+            <p className="font-medium text-gray-900">Your Weekly Tech Update</p>
         </div>
         <div className="space-y-1">
             <p className="text-xs text-gray-400 uppercase tracking-wider">Body</p>
             <p className="leading-relaxed">
               Hey [Name],<br/><br/>
-              We are having a huge summer sale. Everything is 50% off. Come check it out before it&apos;s gone.<br/><br/>
-              Best,<br/>
+              Here are the top stories this week.<br/><br/>
+              [Content Block 1]<br/>
+              [Content Block 2]<br/>
+              [Content Block 3]<br/><br/>
+              Enjoy reading,<br/>
               The Team
             </p>
         </div>

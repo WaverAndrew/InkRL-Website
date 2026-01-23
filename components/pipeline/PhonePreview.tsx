@@ -13,29 +13,29 @@ type Variant = {
 
 const GENERATIONS_DATA: Record<number, Omit<Variant, "id" | "isWinner">[]> = {
   1: [
-    { subject: "Summer Sale: 50% Off", preview: "Everything is half price. Don't miss out...", openRate: 12.4, conversion: 1.2 },
-    { subject: "Your Exclusive Discount", preview: "We've unlocked a special 50% off code for you...", openRate: 15.8, conversion: 1.8 },
-    { subject: "Don't miss this deal", preview: "The biggest sale of the season is here...", openRate: 11.2, conversion: 1.1 },
+    { subject: "This Week in Tech", preview: "The latest stories from the tech world...", openRate: 12.4, conversion: 1.2 },
+    { subject: "Your Weekly Tech Digest", preview: "Curated insights from the industry...", openRate: 15.8, conversion: 1.8 },
+    { subject: "Tech News Roundup", preview: "What happened in tech this week...", openRate: 11.2, conversion: 1.1 },
   ],
   2: [
-    { subject: "Exclusive: 50% Off Inside", preview: "Your code is waiting. Shop the private sale...", openRate: 18.5, conversion: 2.1 },
-    { subject: "Your Exclusive 50% Savings", preview: "Use your personal code for half-off everything...", openRate: 22.1, conversion: 2.9 },
-    { subject: "Private Sale: 50% Off", preview: "Access your exclusive discount before it expires...", openRate: 19.4, conversion: 2.3 },
+    { subject: "Your Personalized Tech Digest", preview: "Stories we picked just for you...", openRate: 18.5, conversion: 2.1 },
+    { subject: "This Week: AI, Startups & More", preview: "The topics you care about most...", openRate: 22.1, conversion: 2.9 },
+    { subject: "Curated for You: Tech Weekly", preview: "Based on what you've loved reading...", openRate: 19.4, conversion: 2.3 },
   ],
   3: [
-    { subject: "Your Exclusive 50% Savings Expires Soon", preview: "Time is running out to use your personal code...", openRate: 25.6, conversion: 3.2 },
-    { subject: "Claim Your Exclusive 50% Savings", preview: "Tap to activate your half-price discount now...", openRate: 28.9, conversion: 3.8 },
-    { subject: "Reminder: Your Exclusive 50% Savings", preview: "Don't let your personal discount go to waste...", openRate: 24.2, conversion: 3.0 },
+    { subject: "The AI Story Everyone's Talking About", preview: "Plus 4 more stories picked for you...", openRate: 25.6, conversion: 3.2 },
+    { subject: "You'll Want to Read This First", preview: "The week's biggest story, curated for you...", openRate: 28.9, conversion: 3.8 },
+    { subject: "Your Top 5 Tech Stories This Week", preview: "Personalized based on your interests...", openRate: 24.2, conversion: 3.0 },
   ],
   4: [
-    { subject: "Claim Your Exclusive 50% Savings (24h left)", preview: "Final call to use your personal discount code...", openRate: 32.4, conversion: 4.1 },
-    { subject: "Claim Your Exclusive 50% Savings [Action Required]", preview: "Activate your discount before midnight...", openRate: 35.8, conversion: 4.5 },
-    { subject: "Last Chance: Claim Your Exclusive 50% Savings", preview: "Your code expires in just a few hours...", openRate: 31.5, conversion: 3.9 },
+    { subject: "🔥 The Startup Story You Can't Miss", preview: "Plus: AI breakthroughs and funding news...", openRate: 32.4, conversion: 4.1 },
+    { subject: "Exclusive: Inside the $2B Acquisition", preview: "The story we think you'll love...", openRate: 35.8, conversion: 4.5 },
+    { subject: "Your Personalized Brief: Major News", preview: "Breaking: What it means for you...", openRate: 31.5, conversion: 3.9 },
   ],
   5: [
-    { subject: "⚠️ Claim Your Exclusive 50% Savings [Action Required]", preview: "Urgent: Your discount code is about to expire...", openRate: 38.2, conversion: 4.9 },
-    { subject: "Final Notice: Claim Your Exclusive 50% Savings", preview: "This is your absolute last chance to save 50%...", openRate: 41.5, conversion: 5.2 },
-    { subject: "Action Required: Your 50% Savings Expire Tonight", preview: "Don't miss out. Activate your code now...", openRate: 39.1, conversion: 5.0 },
+    { subject: "OpenAI Just Changed Everything (For You)", preview: "We explain what this means for your work...", openRate: 38.2, conversion: 4.9 },
+    { subject: "⚡ Your Must-Read: The AI Revolution", preview: "Tailored insights for tech enthusiasts like you...", openRate: 41.5, conversion: 5.2 },
+    { subject: "This Changes Everything — Your Take", preview: "Breaking news, personalized analysis...", openRate: 39.1, conversion: 5.0 },
   ],
 };
 
