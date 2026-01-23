@@ -14,13 +14,13 @@ const loopSteps = [
   {
     icon: Eye,
     title: "Observe",
-    description: "Track opens, clicks, conversions, and engagement patterns",
+    description: "Track every micro-interaction to understand not just what happened, but why.",
     color: "#8B5CF6",
   },
   {
     icon: TrendingUp,
     title: "Improve",
-    description: "Update models with new learnings, refine personalization",
+    description: "Instantly update the model. Your campaign gets smarter and more profitable with every email.",
     color: "#10B981",
   },
 ];
@@ -138,7 +138,7 @@ export function ContinuousLearning() {
               <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
               <path d="M3 3v5h5" />
             </svg>
-            <span>Every email improves the next</span>
+            <span>Every email increases your ROI</span>
           </div>
         </motion.div>
       </div>

@@ -89,9 +89,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold text-ink mb-6 tracking-tight leading-[1.1]"
           >
-            Every Email,<br />
+            We Make Your Users<br />
             <span className="bg-gradient-to-r from-ink via-ink/80 to-ink bg-clip-text">
-              Personalized to Engage
+              Open More Emails
             </span>
           </motion.h1>
 
@@ -101,9 +101,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-gray max-w-3xl mx-auto leading-relaxed mb-12"
           >
-            InkRL uses <span className="text-ink font-medium">AI</span> to understand 
-            your audience and personalize every campaign email, maximizing engagement by learning 
-            <span className="font-bold text-ink"> what each subscriber wants to read and how they want it written.</span>
+            Stop sending generic blasts. InkRL uses <span className="text-ink font-medium">AI</span> to 
+            tailor every message to the individual, guaranteeing higher open rates and 
+            <span className="font-bold text-ink"> deeper engagement without the guesswork.</span>
           </motion.p>
 
           {/* Value prop cards */}
@@ -117,27 +117,27 @@ export default function Home() {
               <div className="h-10 w-10 flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-ink stroke-[1.5]" />
               </div>
-              <h3 className="font-semibold text-ink mb-2">Understand Behavior</h3>
+              <h3 className="font-semibold text-ink mb-2">Predict Behavior</h3>
               <p className="text-sm text-muted-gray">
-                Analyze historical interactions to understand each user&apos;s preferences and patterns.
+                We analyze history to predict exactly what your users want to see next.
               </p>
             </div>
             <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors">
               <div className="h-10 w-10 flex items-center justify-center mb-4">
                 <Brain className="h-6 w-6 text-ink stroke-[1.5]" />
               </div>
-              <h3 className="font-semibold text-ink mb-2">Personalize Content</h3>
+              <h3 className="font-semibold text-ink mb-2">Hyper-Personalize</h3>
               <p className="text-sm text-muted-gray">
-                Tailor what content to show and how it&apos;s written for maximum impact.
+                Every subscriber gets a unique subject line tailored to their psychology.
               </p>
             </div>
             <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors">
               <div className="h-10 w-10 flex items-center justify-center mb-4">
                 <RefreshCw className="h-6 w-6 text-ink stroke-[1.5]" />
               </div>
-              <h3 className="font-semibold text-ink mb-2">Optimize Automatically</h3>
+              <h3 className="font-semibold text-ink mb-2">Autopilot Growth</h3>
               <p className="text-sm text-muted-gray">
-                Continuous experimentation without manual A/B testing: the system learns and adapts.
+                Our AI runs thousands of experiments 24/7 to maximize your metrics independently.
               </p>
             </div>
           </motion.div>
@@ -151,8 +151,8 @@ export default function Home() {
         <section className="max-w-6xl mx-auto w-full mb-32">
           <SectionHeader
             step="Step 01"
-            title="We Study Your Audience"
-            subtitle="By analyzing the history of user interactions, we build deep behavioral profiles that reveal what each subscriber truly responds to."
+            title="Stop Guessing About Your Audience"
+            subtitle="We don't just 'segment' users. We analyze their entire history to predict their future behavior and uncover what actually drives their engagement."
             icon={History}
           />
 
@@ -219,8 +219,8 @@ export default function Home() {
         <section className="max-w-6xl mx-auto w-full mb-32">
           <SectionHeader
             step="Step 02"
-            title="Two Dimensions of Optimization"
-            subtitle="For each user, we optimize both what content to include and how to write it — the winning combination for maximum engagement."
+            title="Optimization That Actually Works"
+            subtitle="For each user, we optimize both the content they see and the way it's framed. It's not magic: it's math, and it wins every time."
             icon={Users}
           />
 
@@ -235,8 +235,8 @@ export default function Home() {
         <section className="max-w-6xl mx-auto w-full mb-32">
           <SectionHeader
             step="Step 03"
-            title="You Set the Template, We Do the Rest"
-            subtitle="Focus on your core message. We take your campaign template and automatically generate thousands of personalized variations optimized specifically for open rates."
+            title="You Write the Story. We Ensure the Read."
+            subtitle="Don't let good content go unnoticed. We capture attention by perfecting the subject and preview text for every single subscriber."
             icon={Brain}
           />
 
@@ -253,9 +253,9 @@ export default function Home() {
                   Maximum Opens, Minimum Effort
                 </h3>
                 <p className="text-muted-gray leading-relaxed">
-                  The subject line and preview text are the gatekeepers of your content. 
+                  The subject line and preview text are the gatekeepers. 
                   InkRL rigorously optimizes these two elements for every single user to ensure 
-                  your emails actually get opened.
+                  your emails actually get opened, referencing their interests directly.
                 </p>
               </div>
 
@@ -269,7 +269,7 @@ export default function Home() {
                 <div className="p-4 bg-white/60 rounded-xl border border-gray-100">
                   <p className="text-sm font-semibold text-ink mb-1">Preview Text Optimization</p>
                   <p className="text-xs text-muted-gray">
-                    We craft the perfect companion hook that complements the subject line and drives the click.
+                    We craft the perfect companion hook that complements the subject line and forces the click.
                   </p>
                 </div>
               </div>
@@ -283,8 +283,8 @@ export default function Home() {
         <section className="max-w-6xl mx-auto w-full mb-32">
           <SectionHeader
             step="Step 04"
-            title="Autonomous Experimentation"
-            subtitle="We continuously test hypotheses about content and style for each user segment, learning what works without manual intervention."
+            title="Relentless Optimization"
+            subtitle="While you sleep, our AI runs thousands of micro-experiments, automatically dropping what fails and keeping what works."
             icon={FlaskConical}
           />
 
@@ -296,9 +296,9 @@ export default function Home() {
                   Beyond A/B Testing
                 </h3>
                 <p className="text-muted-gray leading-relaxed">
-                  Traditional A/B testing is slow and limited. Our system runs thousands of 
+                  Traditional A/B testing is dead. Our system runs thousands of 
                   micro-experiments simultaneously, evolving copy through generations of 
-                  optimization until it finds what works for each segment.
+                  optimization until we dominate the inbox.
                 </p>
               </div>
 
@@ -337,8 +337,9 @@ export default function Home() {
         <section className="max-w-6xl mx-auto w-full mb-32">
           <SectionHeader
             step="Step 05"
-            title="Observe, Learn, Repeat"
-            subtitle="Every email sent is an opportunity to learn. We observe reactions, update our models, and improve — continuously, autonomously."
+            title="Observe, Learn, Win"
+            subtitle="Every email sent is a data point. We observe reactions, update our models, and improve your metrics—continuously and automatically."
+            subtitle="Every email sent is a data point. We observe reactions, update our models, and improve your metrics—continuously and automatically."
             icon={RefreshCw}
           />
 
@@ -356,8 +357,8 @@ export default function Home() {
             Ready to Transform Your Email Engagement?
           </h2>
           <p className="text-lg text-muted-gray mb-8 max-w-xl mx-auto">
-            Join the newsletters that have stopped guessing and started learning. 
-            Let InkRL optimize every word for every subscriber.
+            Join the newsletters that have stopped guessing and started winning. 
+            Let InkRL optimize every word for max revenue.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -9,7 +9,7 @@ const pillars = [
     title: "Content Selection",
     subtitle: "What to Say",
     description:
-      "We identify which topics, products, and offers resonate with each user. Choosing the right content for the subject line dramatically increases open rates.",
+      "We instantly match the exact offer or story to the user, ensuring maximal relevance before they even open the email.",
     examples: ["Product announcements", "Feature highlights", "Special offers", "Educational content"],
     color: "from-blue-500/20 to-blue-600/20",
     borderColor: "border-blue-500/30",
@@ -21,7 +21,7 @@ const pillars = [
     title: "Style Optimization",
     subtitle: "How to Say It",
     description:
-      "We learn the linguistic style each user responds to. Some prefer urgency, others appreciate casual warmth. We tailor the tone to maximize engagement.",
+      "We adapt the tone to the reader's psychology. Whether they respond to urgency or curiosity, we write it the way they want to read it.",
     examples: ["Formal vs. casual", "Urgency levels", "Emoji usage", "Sentence length"],
     color: "from-purple-500/20 to-purple-600/20",
     borderColor: "border-purple-500/30",
