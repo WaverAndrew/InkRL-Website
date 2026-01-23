@@ -339,7 +339,6 @@ export default function Home() {
             step="Step 05"
             title="Observe, Learn, Win"
             subtitle="Every email sent is a data point. We observe reactions, update our models, and improve your metrics—continuously and automatically."
-            subtitle="Every email sent is a data point. We observe reactions, update our models, and improve your metrics—continuously and automatically."
             icon={RefreshCw}
           />
 
