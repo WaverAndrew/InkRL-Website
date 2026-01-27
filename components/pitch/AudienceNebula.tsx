@@ -7,11 +7,11 @@ import * as THREE from "three";
 
 // Cluster definitions with meaningful labels
 const CLUSTERS = [
-  { name: "Tech Enthusiasts", color: "#3B82F6", center: [-2, 1, 0], size: 250 },
-  { name: "Deal Seekers", color: "#10B981", center: [2, -1, 1], size: 200 },
-  { name: "Early Adopters", color: "#8B5CF6", center: [0, 2, -1], size: 180 },
-  { name: "Casual Readers", color: "#F59E0B", center: [1, -2, -1], size: 220 },
-  { name: "Power Users", color: "#EF4444", center: [-1, -1, 2], size: 160 },
+  { name: "Content Interest: Tech", color: "#3B82F6", center: [-2, 1, 0], size: 250 },
+  { name: "Linguistic Style: Formal", color: "#10B981", center: [2, -1, 1], size: 200 },
+  { name: "Content: Finance", color: "#8B5CF6", center: [0, 2, -1], size: 180 },
+  { name: "Tone: Urgent", color: "#F59E0B", center: [1, -2, -1], size: 220 },
+  { name: "Style: Storytelling", color: "#EF4444", center: [-1, -1, 2], size: 160 },
 ];
 
 interface ParticleSystemProps {

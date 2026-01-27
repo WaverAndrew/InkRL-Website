@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import Header from "@/components/Header";
-import { StylographicPen } from "@/components/StylographicPen";
+import { HeroNebula } from "@/components/HeroNebula";
 import { ParallaxArrow } from "@/components/pipeline/ParallaxArrow";
 import { PhonePreview } from "@/components/pipeline/PhonePreview";
 import { EmailInput } from "@/components/pipeline/EmailInput";
@@ -67,8 +67,9 @@ export default function Home() {
         {/* HERO SECTION */}
         {/* ============================================ */}
         <section className="relative z-10 max-w-5xl mx-auto text-center mb-32 pt-16">
-          <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 hidden lg:block pointer-events-none">
-            <StylographicPen />
+          {/* Particle nebula behind hero content */}
+          <div className="absolute inset-0 -z-10 overflow-hidden">
+            <HeroNebula />
           </div>
 
           <motion.div
@@ -113,7 +114,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-4xl mx-auto"
           >
-            <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors">
+            <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors flex flex-col items-center text-center">
               <div className="h-10 w-10 flex items-center justify-center mb-4">
                 <Users className="h-6 w-6 text-ink stroke-[1.5]" />
               </div>
@@ -122,7 +123,7 @@ export default function Home() {
                 We analyze history to predict exactly what your users want to see next.
               </p>
             </div>
-            <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors">
+            <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors flex flex-col items-center text-center">
               <div className="h-10 w-10 flex items-center justify-center mb-4">
                 <Brain className="h-6 w-6 text-ink stroke-[1.5]" />
               </div>
@@ -131,7 +132,7 @@ export default function Home() {
                 Every subscriber gets a unique subject line tailored to their psychology.
               </p>
             </div>
-            <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors">
+            <div className="p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm group hover:border-ink/20 transition-colors flex flex-col items-center text-center">
               <div className="h-10 w-10 flex items-center justify-center mb-4">
                 <RefreshCw className="h-6 w-6 text-ink stroke-[1.5]" />
               </div>
@@ -207,6 +208,7 @@ export default function Home() {
               <div className="pt-4 border-t border-gray-100">
                 <p className="text-sm text-muted-gray italic">
                   &quot;We found 12 distinct audience segments in our newsletter that we never knew existed.&quot;
+                  <span className="ml-1 not-italic opacity-70">— from Beta Tester</span>
                 </p>
               </div>
             </motion.div>
@@ -255,7 +257,7 @@ export default function Home() {
                 <p className="text-muted-gray leading-relaxed">
                   The subject line and preview text are the gatekeepers. 
                   InkRL rigorously optimizes these two elements for every single user to ensure 
-                  your emails actually get opened, referencing their interests directly.
+                  your emails actually get opened.
                 </p>
               </div>
 
@@ -263,7 +265,7 @@ export default function Home() {
                 <div className="p-4 bg-white/60 rounded-xl border border-gray-100">
                   <p className="text-sm font-semibold text-ink mb-1">Subject Line Optimization</p>
                   <p className="text-xs text-muted-gray">
-                    We test tone, length, emoji usage, and keywords to find what stops the scroll for each user.
+                    We test tone, length, emoji usage, keywords, hooks, and more to find what stops the scroll for each user.
                   </p>
                 </div>
                 <div className="p-4 bg-white/60 rounded-xl border border-gray-100">
@@ -338,7 +340,7 @@ export default function Home() {
           <SectionHeader
             step="Step 05"
             title="Observe, Learn, Win"
-            subtitle="Every email sent is a data point. We observe reactions, update our models, and improve your metrics—continuously and automatically."
+            subtitle="Every email sent is a data point. We observe reactions, update our models, and improve your metrics continuously and automatically."
             icon={RefreshCw}
           />
 

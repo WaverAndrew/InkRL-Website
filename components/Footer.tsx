@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -8,31 +9,39 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-mono text-lg font-medium mb-4">inkRL</h3>
+            <div className="relative h-6 w-24 mb-4">
+              <Image
+                src="/images/full_logo-removebg-preview.png"
+                alt="inkRL"
+                fill
+                className="object-contain object-left"
+                sizes="96px"
+              />
+            </div>
             <p className="text-sm text-muted-gray font-sans">
-              Learning pages. Continuously optimized copy.
+              Where copy learns.
             </p>
           </div>
           <div>
             <h3 className="font-mono text-lg font-medium mb-4">Contact</h3>
             <div className="space-y-2 text-sm font-sans text-muted-gray">
               <a
-                href="mailto:andrea.bonarrigo@studbocconi.it"
+                href="mailto:andrea@inkrl.com"
                 className="block hover:text-ink transition-colors"
               >
-                andrea.bonarrigo@studbocconi.it
+                andrea@inkrl.com
               </a>
               <a
-                href="mailto:vittorio.garavelli@studbocconi.it"
+                href="mailto:vittorio@inkrl.com"
                 className="block hover:text-ink transition-colors"
               >
-                vittorio.garavelli@studbocconi.it
+                vittorio@inkrl.com
               </a>
               <a
-                href="mailto:filippo.gombac@studbocconi.it"
+                href="mailto:filippo@inkrl.com"
                 className="block hover:text-ink transition-colors"
               >
-                filippo.gombac@studbocconi.it
+                filippo@inkrl.com
               </a>
             </div>
           </div>

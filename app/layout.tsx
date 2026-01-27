@@ -17,10 +17,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'inkRL - Learning pages',
-  description: 'Continuously optimized copy aligned to traffic intent & segment',
+  description: 'Where copy learns',
   openGraph: {
     title: 'inkRL - Learning pages',
-    description: 'Continuously optimized copy aligned to traffic intent & segment',
+    description: 'Where copy learns',
     type: 'website',
   },
 }

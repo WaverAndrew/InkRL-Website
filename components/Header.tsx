@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import InkLogo from "./InkLogo";
 
 const navItems = [
   { label: "How it works", href: "/" },
@@ -19,8 +19,15 @@ export default function Header() {
           href="/"
           className="hidden items-center gap-2 text-[0.65rem] tracking-[0.4em] sm:flex"
         >
-          <InkLogo className="h-9 w-9" />
-          <span className="text-base font-medium">inkRL</span>
+          <div className="relative h-8 w-32">
+            <Image
+              src="/images/full_logo-removebg-preview.png"
+              alt="inkRL"
+              fill
+              className="object-contain"
+              sizes="128px"
+            />
+          </div>
         </Link>
 
         <div className="flex flex-1 flex-wrap items-center justify-center gap-3 text-muted-gray">

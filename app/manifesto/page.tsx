@@ -159,7 +159,7 @@ const fadeUp = {
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-paper text-ink">
+    <main className="relative min-h-screen overflow-x-hidden bg-paper text-ink">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(17,17,17,0.25),_transparent_60%)]" />
         <motion.div
@@ -188,7 +188,7 @@ export default function Home() {
       </div>
 
       <Header />
-      <div className="relative z-10 flex min-h-screen flex-col px-6 pb-10 pt-32 sm:px-10 lg:px-24">
+      <div className="relative z-10 flex min-h-screen flex-col px-6 pb-32 pt-32 sm:px-10 lg:px-24">
         <motion.header
           className="flex items-center justify-between text-sm uppercase tracking-[0.2em]"
           initial={{ opacity: 0, y: -10 }}
@@ -228,7 +228,7 @@ export default function Home() {
           {prefaceParagraphs.map((paragraph, idx) => (
             <motion.p
               key={paragraph.id}
-              className="max-w-4xl text-base text-muted-gray sm:text-lg"
+              className="max-w-4xl text-lg text-muted-gray sm:text-xl"
               initial={fadeUp.initial}
               animate={fadeUp.animate(0.25 + idx * 0.05)}
             >
@@ -236,7 +236,7 @@ export default function Home() {
             </motion.p>
           ))}
           <motion.p
-            className="max-w-4xl text-base text-muted-gray sm:text-lg"
+            className="max-w-4xl text-lg text-muted-gray sm:text-xl"
             {...fadeUp.animate(0.25 + prefaceParagraphs.length * 0.05)}
             initial={fadeUp.initial}
           >
@@ -290,7 +290,7 @@ export default function Home() {
             inkrl
           </p>
           <p className="text-3xl font-medium leading-snug sm:text-4xl">
-            Reinforcement learning for language that learns you back.
+            Where copy learns.
           </p>
         </motion.section>
       </div>

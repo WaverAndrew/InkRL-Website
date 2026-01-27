@@ -11,11 +11,10 @@ const team = [
       'Bocconi / visiting UC Santa Cruz',
       'Founder (Ubooks)',
       'Ex. Amazon Tech PM',
-      '2x UPENN hackathon winner',
       'Y Combinator Start Up School',
     ],
     image: '/avatars/andrea.jpg',
-    email: 'andrea.bonarrigo@studbocconi.it',
+    email: 'andrea@inkrl.com',
   },
   {
     name: 'Vittorio Garavelli',
@@ -27,7 +26,7 @@ const team = [
       'Ex. M&A Analyst',
     ],
     image: '/avatars/vittorio.jpg',
-    email: 'vittorio.garavelli@studbocconi.it',
+    email: 'vittorio@inkrl.com',
   },
   {
     name: 'Filippo Gombac',

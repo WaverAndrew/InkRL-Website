@@ -16,7 +16,7 @@ const founders = [
     description:
       "Ex-Amazon Tech PM, founded Ubooks (40K users, $30K MRR at 17), 5× hackathon winner, YC Startup School alum. Product-focused founder with deep systems and early-scaling experience.",
     image: "/avatars/andrea.jpeg",
-    email: "andrea.bonarrigo@studbocconi.it",
+    email: "andrea@inkrl.com",
     floatDelay: 0,
   },
   {
@@ -26,7 +26,7 @@ const founders = [
     description:
       "RL researcher out of Bocconi and Berkeley. Co-founded a web dev & SEO agency and worked as an M&A analyst. Leads engineering by marrying applied RL with full-stack execution.",
     image: "/avatars/vittorio.jpg",
-    email: "vittorio.garavelli@studbocconi.it",
+    email: "vittorio@inkrl.com",
     floatDelay: 0.4,
   },
   {
@@ -36,7 +36,7 @@ const founders = [
     description:
       "ML & RL researcher focused on model design, LoRA fine-tuning, and applied reinforcement-learning systems. Leads inkRL’s core research and training architecture.",
     image: "/avatars/filippo.jpg",
-    email: "filippo.gombac@studbocconi.it",
+    email: "filippo@inkrl.com",
     floatDelay: 0.8,
   },
 ];

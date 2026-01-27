@@ -8,7 +8,7 @@ const loopSteps = [
   {
     icon: Send,
     title: "Send",
-    description: "Deploy personalized campaigns to each user segment",
+    description: "Deploy personalized campaigns to each user",
     color: "#3B82F6",
   },
   {
