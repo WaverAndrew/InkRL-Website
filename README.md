@@ -88,7 +88,7 @@ lib/
 
 Place team member photos in `public/avatars/`:
 - `andrea.jpg`
-- `vittorio.jpg`
+- `vittorio.jpeg`
 - `filippo.jpg`
 
 ### Modify Content

@@ -25,7 +25,7 @@ const team = [
       'Co-Founder (Web Dev & SEO)',
       'Ex. M&A Analyst',
     ],
-    image: '/avatars/vittorio.jpg',
+    image: '/avatars/vittorio.jpeg',
     email: 'vittorio@inkrl.com',
   },
   {

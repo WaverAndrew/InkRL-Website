@@ -25,7 +25,7 @@ const founders = [
     subtitle: "Bocconi University | Visiting UC Berkeley",
     description:
       "RL researcher out of Bocconi and Berkeley. Co-founded a web dev & SEO agency and worked as an M&A analyst. Leads engineering by marrying applied RL with full-stack execution.",
-    image: "/avatars/vittorio.jpg",
+    image: "/avatars/vittorio.jpeg",
     email: "vittorio@inkrl.com",
     floatDelay: 0.4,
   },
