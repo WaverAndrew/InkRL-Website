@@ -223,6 +223,7 @@ export default function Home() {
             step="Step 02"
             title="Optimization That Actually Works"
             subtitle="For each user, we optimize both the content they see and the way it's framed. It's not magic: it's math, and it wins every time."
+
             icon={Users}
           />
 
@@ -363,7 +364,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:contact@inkrl.com"
+              href="mailto:andrea@inkrl.com?subject=Demo%20Request%3A%20InkRL&body=Hi%20Andrea%2C%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20InkRL%20and%20how%20it%20can%20help%20optimize%20our%20email%20performance.%0A%0ACould%20we%20schedule%20a%20time%20for%20a%20demo%3F%0A%0ABest%2C"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-ink px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-ink/90"
             >
               Schedule a Demo
