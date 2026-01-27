@@ -37,7 +37,7 @@ const team = [
       'ML research @ Bocconi',
       'Ex. M&A Analyst',
     ],
-    image: '/avatars/filippo.jpg',
+    image: '/avatars/filippo.jpeg',
     email: 'filippo.gombac@studbocconi.it',
   },
 ]

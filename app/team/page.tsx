@@ -35,7 +35,7 @@ const founders = [
     subtitle: "Bocconi University | Visiting UCL",
     description:
       "ML & RL researcher focused on model design, LoRA fine-tuning, and applied reinforcement-learning systems. Leads inkRL’s core research and training architecture.",
-    image: "/avatars/filippo.jpg",
+    image: "/avatars/filippo.jpeg",
     email: "filippo@inkrl.com",
     floatDelay: 0.8,
   },
