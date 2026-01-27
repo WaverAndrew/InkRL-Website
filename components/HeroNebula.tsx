@@ -38,7 +38,7 @@ export function HeroNebula() {
     ];
 
     // Initialize particles
-    const numParticles = 130;
+    const numParticles = 100;
     for (let i = 0; i < numParticles; i++) {
       particles.push({
         x: Math.random() * canvas.offsetWidth,
