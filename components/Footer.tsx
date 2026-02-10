@@ -37,12 +37,12 @@ export default function Footer() {
               >
                 vittorio@inkrl.com
               </a>
-              <a
+              {/* <a
                 href="mailto:filippo@inkrl.com"
                 className="block hover:text-ink transition-colors"
               >
                 filippo@inkrl.com
-              </a>
+              </a> */}
             </div>
           </div>
           <div>

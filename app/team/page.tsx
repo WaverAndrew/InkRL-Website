@@ -29,16 +29,16 @@ const founders = [
     email: "vittorio@inkrl.com",
     floatDelay: 0.4,
   },
-  {
-    name: "Filippo Gombac",
-    title: "Co-Founder & Chief Research",
-    subtitle: "Bocconi University | Visiting UCL",
-    description:
-      "ML & RL researcher focused on model design, LoRA fine-tuning, and applied reinforcement-learning systems. Leads inkRL’s core research and training architecture.",
-    image: "/avatars/filippo.jpeg",
-    email: "filippo@inkrl.com",
-    floatDelay: 0.8,
-  },
+  // {
+  //   name: "Filippo Gombac",
+  //   title: "Co-Founder & Chief Research",
+  //   subtitle: "Bocconi University | Visiting UCL",
+  //   description:
+  //     "ML & RL researcher focused on model design, LoRA fine-tuning, and applied reinforcement-learning systems. Leads inkRL’s core research and training architecture.",
+  //   image: "/avatars/filippo.jpeg",
+  //   email: "filippo@inkrl.com",
+  //   floatDelay: 0.8,
+  // },
 ];
 
 export default function TeamPage() {
@@ -60,7 +60,7 @@ export default function TeamPage() {
           </p>
         </div>
 
-        <div className="mt-24 grid gap-14 md:grid-cols-3">
+        <div className="mt-24 grid gap-14 md:grid-cols-2 max-w-4xl mx-auto">
           {founders.map((founder) => (
             <motion.article
               key={founder.name}

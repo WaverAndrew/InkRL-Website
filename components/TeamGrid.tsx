@@ -28,18 +28,18 @@ const team = [
     image: '/avatars/vittorio.jpeg',
     email: 'vittorio@inkrl.com',
   },
-  {
-    name: 'Filippo Gombac',
-    role: 'Co-Founder',
-    bio: [
-      'Bocconi / visiting UCL',
-      'RL research @ Bocconi',
-      'ML research @ Bocconi',
-      'Ex. M&A Analyst',
-    ],
-    image: '/avatars/filippo.jpeg',
-    email: 'filippo.gombac@studbocconi.it',
-  },
+  // {
+  //   name: 'Filippo Gombac',
+  //   role: 'Co-Founder',
+  //   bio: [
+  //     'Bocconi / visiting UCL',
+  //     'RL research @ Bocconi',
+  //     'ML research @ Bocconi',
+  //     'Ex. M&A Analyst',
+  //   ],
+  //   image: '/avatars/filippo.jpeg',
+  //   email: 'filippo.gombac@studbocconi.it',
+  // },
 ]
 
 export default function TeamGrid() {
@@ -47,7 +47,7 @@ export default function TeamGrid() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       {team.map((member, i) => (
         <motion.div
           key={i}
